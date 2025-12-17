@@ -1,0 +1,40 @@
+{
+  "app_jwt_authorized_paths":{
+    "paths": [
+      "/user-details",
+      "/auth/session",
+      "/logout",
+      "/update-profile",
+      "/add-vehicle",
+      "/send-message",
+      "/delete-message",
+      "/delete-vehicle",
+      "/vehicle-profile-qr-download",
+      "/vehicle-detail",
+      "/my-vehicles"
+    ]
+  },
+  "app_audit_log_paths":{
+    "paths":[
+      "/user-details",
+      "/auth/session",
+      "/auth/google",
+      "/logout",
+      "/add-vehicle",
+      "/send-message",
+      "/delete-message",
+      "/delete-vehicle",
+      "/vehicle-profile-qr-download",
+      "/vehicle-detail"
+    ]
+  },
+  "app_encrypted_keys":{
+    "keys": []
+  },
+  "app_numeric_keys":{
+    "keys": []
+  },
+  "app_hashed_keys":{
+    "keys": []
+  }
+}
