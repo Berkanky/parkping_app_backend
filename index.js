@@ -41,6 +41,7 @@ if( !MONGODB_NAME ) throw "Database name not found.";
 if( !NODE_ENV ) throw "NODE_ENV required. ";
 if( !TRUST_PROXY ) throw "TRUST_PROXY required. ";
 if( !ISSUER ) throw "ISSUER required. ";
+if (!MONGODB_URI) throw "MONGODB_URI required.";
 
 app.set('trust proxy', TRUST_PROXY === 'true');
 app.disable('x-powered-by');
@@ -103,6 +104,7 @@ mongoose
     console.log("MongoDB connection completed. ");
   })
   .catch((err) => { 
+    console.error("MongoDB connection failed:", err);
     return process.exit(1);
   });
 
