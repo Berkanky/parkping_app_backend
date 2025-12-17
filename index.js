@@ -109,7 +109,7 @@ mongoose
   });
 
 var devOrigins = []; //localhost domain.
-var prodOrigins = []; //prod domain.
+var prodOrigins = ["https://app.parkping.app"]; //prod domain.
 
 var allowedOrigins = (NODE_ENV === 'production' ? prodOrigins : devOrigins).filter(Boolean);
 
