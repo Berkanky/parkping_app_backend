@@ -34,7 +34,7 @@ var routes = require("./routes/index");
 
 var { MONGODB_URI, NODE_ENV, TRUST_PROXY, MONGODB_NAME, BACKEND_VERSION, ISSUER } = process.env;
 
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 if( !BACKEND_VERSION ) throw "BACKEND_VERSION required. ";
 if( !MONGODB_NAME ) throw "Database name not found.";
